@@ -1,5 +1,4 @@
 import * as cdk from 'aws-cdk-lib';
-import { Certificate } from 'aws-cdk-lib/aws-certificatemanager';
 import { Construct } from 'constructs';
 import { RetentionDays } from 'aws-cdk-lib/aws-logs';
 import { aws_lambda_nodejs as nodeLambda, aws_lambda as lambda } from 'aws-cdk-lib';
@@ -18,7 +17,7 @@ export class PasswordsStack extends cdk.Stack {
       entry: `${__dirname}/../../handler.js`,
       architecture: lambda.Architecture.ARM_64,
       memorySize: 2048,
-      runtime: lambda.Runtime.NODEJS_16_X,
+      runtime: lambda.Runtime.NODEJS_22_X,
       timeout: cdk.Duration.seconds(20),
       logRetention: RetentionDays.ONE_DAY,
     });
