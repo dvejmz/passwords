@@ -7,7 +7,7 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "yarn build && yarn cdk deploy --require-approval=never"
+    "deploy": "npm run build && npm run cdk deploy --require-approval=never"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",

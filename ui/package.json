@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "rimraf -rf ./dist && yarn build && ./deploy.sh"
+    "deploy": "rimraf -rf ./dist && npm run build && ./deploy.sh"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.2",
